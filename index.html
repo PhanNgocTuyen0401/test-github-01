@@ -9,3 +9,36 @@
     <p>OK </p>
 </body>
 </html>
+<!-- 
+Trước khi muốn đẩy code lên Github
+-phải có source code 
+-tạo 1 repo trên Github để lưu code 
+-vào source => {git init) => để khỏi tạo Github trên source 
+-config các thông tin cá nhân để Github nhận diện(Nhập lệnh)
+    ===Cách 1=== 
+    +{git config user/name TenTen) => cấu hình tên của user khi đẩy code lên Github
+    +{git config user/name email ten-email.com@gamil.com) =>cấu hình email của user khi đẩy code lên Github
+    ===Cách 2===
+    +{git config -g user/name TenTen) => cấu hình tên của user khi đẩy code lên Github
+    +{ghi config -g user/name email ten-email.com@gamil.com) =>cấu hình email của user khi đẩy code lên Github
+    ==== -g viết tắt của --global ===
+-sau khi khởi tạo và cấu hình thông tin ->sẽ đến bước remote giữa source và Github -> thực hiện 1 lần duy nhất khi khởi tạo repo 
+    +{git remote add origin git@github.com.....)
+-các bước đẩy code lên Github
+    + git add . Và git add tên file ()
+        -{git add)/{git add -A) => chọn tất cả các file vừa chỉnh sửa/tạo mới để đẩy lên Github
+        -git add index.html => chỉ chọn đúng file này để tải lên Github
+    +{Git commit -m "Ten commit") viết 1 lời nhắn để bt được những thay đổi muốn đẩy lên Github
+        -git commit -m Tạo trang home 
+    +{git bush -u origin ten_nhanh) 
+        -git bush -u origin main => đẩy code từ bộ nhớ tạm ở folder.git lên Github
+        -từ lần push thứ 2 trở đi chỉ cần nhập {git push) trên chính branch/ nhánh đang làm việc
+-các Key cần quan tâm khu dùng Github
+    +init => khởi tạo
+    +config => cài đặt/cấu hình 
+    +remove => điều khiển/kích hoạt điều khiển giứa máy tính và Github
+    +add => tạo commit
+    +commit => cam kết 
+    +push => đẩy
+    +pull => kéo 
+    +checkout => tạo/chuyển  -->
